@@ -1,9 +1,12 @@
+import AboutMe from "../../pages/AboutMe/AboutMe";
+import Banner from "../../pages/Banner/Banner";
 
 
 const Home = () => {
   return (
     <div>
-      <h2>Home</h2>
+      <Banner></Banner>
+      <AboutMe></AboutMe>
     </div>
   );
 };

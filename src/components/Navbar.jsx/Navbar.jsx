@@ -7,14 +7,14 @@ const Navbar = () => {
       <NavLink>Home</NavLink>
       <NavLink>About Me</NavLink>
       <NavLink>Skill</NavLink>
+      <NavLink>Resume</NavLink>
       <NavLink>Project</NavLink>
-      <NavLink>Conte</NavLink>
+      <NavLink>Contact</NavLink>
     </>
   );
-
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar sticky top-0 justify-evenly">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,23 +33,27 @@ const Navbar = () => {
                 />
               </svg>
             </div>
+
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {links}
-             
-             
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">Mahfuz Ahmed</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal font-bold text-[18px]  gap-12 px-1">
+        <div className="navbar-center hidden gap-3 lg:flex">
+          <ul className="menu menu-horizontal  font-semibold text-[16px]  gap-12 px-1">
             {links}
           </ul>
+          {/* <div className="lg:block ">
+            <button className="hover:bg-black font-semibold hover:text-white px-3 py-2 glass-effect border">
+              Hire me
+            </button>
+          </div> */}
         </div>
-        <div className="navbar-end">
+        <div className="lg:hidden">
           <a className="btn">Hire me</a>
         </div>
       </div>
