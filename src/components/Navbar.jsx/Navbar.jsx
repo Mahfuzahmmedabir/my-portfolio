@@ -1,21 +1,33 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const links = (
-    <>
-      <NavLink>Home</NavLink>
-      <NavLink>About Me</NavLink>
-      <NavLink>Skill</NavLink>
-      <NavLink>Resume</NavLink>
-      <NavLink>Project</NavLink>
-      <NavLink>Contact</NavLink>
-    </>
+    <ul className="flex">
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#skill">Skill</a>
+      </li>
+      <li>
+        <a href="#resume">Resume</a>
+      </li>
+      <li>
+        <a href="#project">Project</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
   );
   return (
-    <div>
-      <div className="navbar sticky top-0 justify-evenly">
-        <div className="navbar-start">
+    <div className=" sticky bg-base-200  top-0 z-50 ">
+      <div className="navbar justify-evenly">
+        <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -47,11 +59,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal  font-semibold text-[16px]  gap-12 px-1">
             {links}
           </ul>
-          {/* <div className="lg:block ">
-            <button className="hover:bg-black font-semibold hover:text-white px-3 py-2 glass-effect border">
-              Hire me
-            </button>
-          </div> */}
+         
         </div>
         <div className="lg:hidden">
           <a className="btn">Hire me</a>
