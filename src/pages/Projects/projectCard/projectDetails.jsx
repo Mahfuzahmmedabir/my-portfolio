@@ -6,7 +6,7 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const details = projectsData.find(item => item.id == id);
   // console.log(details);
-  const { description, title, tech, image, demo, repo } = details;
+  const { description, title, tech, image, demo, repo, Features } = details;
 
   return (
     <div>
@@ -16,14 +16,23 @@ const ProjectDetails = () => {
         </div>
         <div className="w-6/12">
           <h2 className="text-xl font-semibold">
-            <span className="text-gray-400">Name:</span> {title}
+            <span className="text-gray-600 font-bold">Name:</span> {title}
           </h2>
           <p className="mt-2">
-            <span className="text-gray-400">Description: </span>
+            <span className="text-gray-600 font-bold">Description: </span>
             {description}
           </p>
-          <h2 className="mt-2 text-gray-400">Technology used</h2>
-          <div className="mt-2 flex gap-3">
+          <div>
+            <h2 className="mt-3 text-gray-600 font-bold">Key Features</h2>
+            <div className="mt-3">
+              {Features?.map(item => (
+                <p className="mt-1">{item} </p>
+              ))}
+            </div>
+          </div>
+
+          <div className=" mt-2 flex items-center gap-3">
+            <h2 className=" text-gray-600 font-bold">Technology used:</h2>
             {tech.map(technology => (
               <p>{technology}</p>
             ))}

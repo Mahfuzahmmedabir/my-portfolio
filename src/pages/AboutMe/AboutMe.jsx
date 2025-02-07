@@ -22,37 +22,32 @@ const AboutMe = () => {
             high-quality, performance-driven solutions.
           </p>
           <h2 className="text-2xl mt-2 font-bold"> My Full Stack Expertise</h2>
-          <div className="leading-7">
-            <h3 className="text-xl font-bold">
-              Frontend Development (UI/UX Focus)
-            </h3>
+          <div className="leading-7 mt-2">
+            <h3 className=" font-bold">Frontend Development (UI/UX Focus)</h3>
             <p>
               {' '}
               ✔ Languages & Frameworks: HTML5, CSS3, JavaScript (ES6+),
-              TypeScript (learning)
+              TypeScript (learning).
             </p>
             <p>
               {' '}
-              ✔ Frontend Libraries: React.js, Next.js, Tailwind CSS, Material UI
+              ✔ Frontend Libraries: React.js, Next.js, Tailwind CSS, Material UI.
             </p>
             <p>
               ✔ UI/UX Principles: Mobile-first design, CSS animations, Framer
-              Motion
+              Motion.
             </p>
-            <p>✔ State Management: React Context API</p>
+            <p>✔ State Management: React Context API.</p>
           </div>
 
           <div className="leading-7">
-            <h3 className="text-xl font-bold">
-              Backend Development (Server & APIs)
-            </h3>
-            <p>✔ Backend Frameworks: Node.js, Express.js</p>
-            <p>✔ Databases: MongoDB (NoSQL), Firebase</p>
+            <h3 className=" font-bold">Backend Development (Server & APIs).</h3>
+            <p>✔ Backend Frameworks: Node.js, Express.js.</p>
+            <p>✔ Databases: MongoDB (NoSQL), Firebase.</p>
             <p>
               ✔ API Development: RESTful APIs, Authentication (JWT, Firebase
-              Auth)
+              Auth).
             </p>
-            <p>✔ Server-Side Rendering: Learing Next.js</p>
           </div>
 
           {/* <button className="px-3 mt-3 py-2  rounded-full border">

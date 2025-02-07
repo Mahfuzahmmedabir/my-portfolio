@@ -3,7 +3,7 @@ import banner from '../../assets/ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaSquareWhatsapp } from 'react-icons/fa6';
-import { MdEmail } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
@@ -39,12 +39,12 @@ const Banner = () => {
               </a>
             </li>
 
-            <button className="text-[#4FCE5D] text-3xl">
-              <FaSquareWhatsapp></FaSquareWhatsapp>
-            </button>
-            <a href="#contact" className="text-3xl">
-              <MdEmail></MdEmail>
-            </a>
+            <Link
+              to={'https://github.com/Mahfuzahmmedabir'}
+              className=" text-3xl"
+            >
+              <FaGithub></FaGithub>
+            </Link>
           </ul>
         </div>
 
