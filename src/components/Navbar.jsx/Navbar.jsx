@@ -53,13 +53,12 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Mahfuz Ahmed</a>
+          <a className="btn btn-ghost text-xl font-extrabold ">Mahfuz Ahmed</a>
         </div>
         <div className="navbar-center hidden gap-3 lg:flex">
           <ul className="menu menu-horizontal  font-semibold text-[16px]  gap-12 px-1">
             {links}
           </ul>
-         
         </div>
         <div className="lg:hidden">
           <a className="btn">Hire me</a>

@@ -14,8 +14,8 @@ const projectsData = [
       '✔ Admin Dashboard – Manage users, moderate All pets, and analyze insights.',
     ],
     image: 'https://i.ibb.co.com/XrWdvwKN/pat-haven.png',
-    demo: 'https://your-demo-link.com',
-    repo: 'https://github.com/your-repo',
+    demo: 'https://extraordinary-unicorn-076c19.netlify.app/',
+    repo: 'https://github.com/Mahfuzahmmedabir/Pethaven-client',
   },
   {
     id: 2,
@@ -30,8 +30,8 @@ const projectsData = [
     ],
     tech: ['React', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Node.js'],
     image: 'https://i.ibb.co.com/qzXS3km/move.png',
-    demo: 'https://your-demo-link.com',
-    repo: 'https://github.com/your-repo',
+    demo: 'https://popcornportal-c8b6e.web.app',
+    repo: 'https://github.com/Mahfuzahmmedabir/movie-protal',
   },
   {
     id: 3,
@@ -47,8 +47,9 @@ const projectsData = [
       '✔ Responsive UI – Fully optimized for mobile, tablet, and desktop users.',
     ],
     image: 'https://i.ibb.co.com/CRvkTNX/rebiew.png',
-    demo: 'https://your-demo-link.com',
-    repo: 'https://github.com/your-repo',
+    demo: 'https://whimsical-seahorse-18aad8.netlify.app/',
+
+    repo: ' https://github.com/Mahfuzahmmedabir/ReviewSphere-client',
   },
 ];
 

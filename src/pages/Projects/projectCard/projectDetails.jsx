@@ -11,10 +11,10 @@ const ProjectDetails = () => {
   return (
     <div>
       <div className="lg:flex gap-10 mt-10">
-        <div className="w-6/12">
+        <div className="lg:w-6/12">
           <img src={image} alt="" />
         </div>
-        <div className="w-6/12">
+        <div className="lg:w-6/12">
           <h2 className="text-xl font-semibold">
             <span className="text-gray-600 font-bold">Name:</span> {title}
           </h2>
@@ -30,18 +30,34 @@ const ProjectDetails = () => {
               ))}
             </div>
           </div>
-
           <div className=" mt-2 flex items-center gap-3">
             <h2 className=" text-gray-600 font-bold">Technology used:</h2>
-            {tech.map(technology => (
-              <p>{technology}</p>
+            {tech?.map(technology => (
+              <>{technology}</>
             ))}
           </div>
+
           <div className="mt-2">
-            <Link className=""> Live link</Link>
-          </div>
-          <div className="mt-2">
-            <Link className=""> Github link</Link>
+            <ul className="flex gap-28 mt-8">
+              <li className="">
+                <a
+                  className="text-xl rounded-lg bg-black text-white py-2 px-3 border "
+                  href={demo}
+                  target='blank'
+                >
+                  Live link
+                </a>
+              </li>
+              <li className="">
+                <a
+                  className="text-xl py-2 rounded-lg bg-black text-white px-3 border "
+                  href={repo}
+                  target='blank'
+                >
+                  Github Link
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

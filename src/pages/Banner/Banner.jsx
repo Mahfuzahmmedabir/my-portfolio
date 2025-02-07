@@ -1,5 +1,4 @@
 import React from 'react';
-import banner from '../../assets/ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaSquareWhatsapp } from 'react-icons/fa6';
@@ -8,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <div className="mt-10">
-      <div className="flex justify-evenly ">
-        <div className="py-28">
+      <div className="lg:flex lg:justify-evenly ">
+        <div className="lg:py-28 ">
           <p className="text-[20px]">Hello</p>
           <h2 className="text-4xl mt-4 font-bold text-gray-950 ">
             I' am Mahfuz
@@ -38,18 +37,22 @@ const Banner = () => {
                 <FaFacebookSquare></FaFacebookSquare>
               </a>
             </li>
-
-            <Link
-              to={'https://github.com/Mahfuzahmmedabir'}
-              className=" text-3xl"
-            >
-              <FaGithub></FaGithub>
-            </Link>
+            <li>
+              <a
+                href="https://github.com/Mahfuzahmmedabir"
+                className=" text-3xl"
+                target="_blank"
+              >
+                <FaGithub></FaGithub>
+              </a>
+            </li>
           </ul>
         </div>
 
-        <div className="w-6/12">
-          <img src={banner} alt="" />
+        <div className="lg:w-6/12 mt-8">
+          {/* <img src={banner} alt="" /> */}
+          <h2 className="text-center text-8xl">TODO</h2>
+          <h2 className="text-center text-2xl">img</h2>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ import {
 const skillsData = [
   { name: 'HTML', level: 90 },
   { name: 'CSS', level: 85 },
+  { name: 'Tailwindcss', level: 90 },
   { name: 'JavaScript', level: 65 },
   { name: 'React', level: 60 },
   { name: 'Node.js', level: 50 },
@@ -26,7 +27,12 @@ const Skill = () => {
         <ResponsiveContainer width="100%" height={250}>
           <BarChart data={skillsData} layout="vertical">
             <XAxis type="number" domain={[0, 100]} hide />
-            <YAxis type="category" dataKey="name" width={100} />
+            <YAxis
+              type="category"
+              style={{ backgroundColor: '#ffffff' }}
+              dataKey="name"
+              width={100}
+            />
             <Tooltip />
             <Bar dataKey="level" fill="#1f2124" barSize={20} />
           </BarChart>

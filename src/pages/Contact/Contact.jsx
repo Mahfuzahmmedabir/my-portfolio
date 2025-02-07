@@ -10,15 +10,13 @@ import {
 import { MdEmail } from 'react-icons/md';
 const Contact = () => {
   return (
-    <div id="contact" className="m-10">
-      <h2 className="text-3xl text-center font-semibold">
-        Let's get connected
-      </h2>
+    <div id="contact" className="  lg:m-10  ">
+      <h2 className="text-3xl text-center font-semibold">Let's get Contact</h2>
 
-      <div className=" lg:flex justify-between gap-5 bg-base-200 rounded-lg lg:p-10 mt-10">
+      <div className=" lg:flex justify-between gap-5 p-4 bg-base-200 rounded-lg lg:p-10 mt-10">
         <div className="mx-auto  lg:w-6/12 py-28 rounded-md ">
           <h2 className="text-3xl  font-bold">Contact me</h2>
-          <p className="mt-10 text-[17px] w-96  ">
+          <p className="mt-10 text-[17px] lg:w-96  ">
             I’d love to hear from you! Whether you have a project idea, job
             opportunity, or just want to connect, feel free to reach out. Let’s
             collaborate and build something amazing!

@@ -5,7 +5,7 @@ import ProjectCard from './projectCard/ProjectCard';
 const Project = () => {
   console.log(projectsData);
   return (
-    <div className="mt-10">
+    <div id='project' className="mt-10">
       <section className="projects-slider ">
         <h2 className="text-3xl font-bold text-center ">My Projects</h2>
       </section>
