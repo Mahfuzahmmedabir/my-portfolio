@@ -14,7 +14,7 @@ const AboutMe = () => {
           <h2 className="text-center text-2xl">img</h2>
         </div>
         <div className="lg:w-8/12">
-          <p className="leading-7 text-[17px]">
+          <p className="leading-7 text-[17px] ">
             Hello! I’m Mahfuz, a passionate Full Stack Developer dedicated to
             building modern, efficient, and scalable web applications. With
             expertise in the MERN stack (MongoDB, Express.js, React.js,
@@ -24,9 +24,9 @@ const AboutMe = () => {
             or developing robust backend architectures, I focus on delivering
             high-quality, performance-driven solutions.
           </p>
-          <h2 className="text-2xl mt-2 font-bold"> My Full Stack Expertise</h2>
-          <div className="leading-7 mt-2">
-            <h3 className=" font-bold">Frontend Development (UI/UX Focus)</h3>
+          <h2 className="text-2xl mt-2 font-bold  lg:text-start"> My Full Stack Expertise</h2>
+          <div className="leading-7 mt-2 ">
+            <h3 className="font-bold">Frontend Development (UI/UX Focus)</h3>
             <p>
               {' '}
               ✔ Languages & Frameworks: HTML5, CSS3, JavaScript (ES6+),
@@ -44,7 +44,7 @@ const AboutMe = () => {
             <p>✔ State Management: React Context API.</p>
           </div>
 
-          <div className="leading-7">
+          <div className="leading-7 ">
             <h3 className=" font-bold">Backend Development (Server & APIs).</h3>
             <p>✔ Backend Frameworks: Node.js, Express.js.</p>
             <p>✔ Databases: MongoDB , Firebase.</p>

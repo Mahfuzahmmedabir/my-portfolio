@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <div className="mt-5 text-center lg:text-left">
-      <div className="lg:flex lg:justify-evenly  ">
-        <div className="lg:py-28  ">
+      <div className="lg:flex lg:justify-evenly md:flex md:justify-evenly  ">
+        <div className="lg:py-28 ">
           <p className="text-[20px]">Hello</p>
           <h2 className="text-4xl mt-4 font-bold text-gray-950 ">
             I' am Mahfuz
