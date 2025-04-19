@@ -8,6 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
+import useAOS from '../../hooks/useAOS';
 
 const skillsData = [
   { name: 'HTML', level: 90 },
@@ -20,8 +21,9 @@ const skillsData = [
   { name: 'Firebase', level: 90 },
 ];
 const Skill = () => {
+  useAOS()
   return (
-    <div id="skill" className="mt-14 z-10">
+    <div data-aos="fade-up" id="skill" className="mt-14 z-10">
       <h2 className="text-center text-3xl font-bold">My Skill</h2>
       <div className="">
         <ResponsiveContainer width="100%" height={250}>

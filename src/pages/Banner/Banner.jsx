@@ -6,22 +6,23 @@ import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
-    <div className="mt-10">
-      <div className="lg:flex lg:justify-evenly ">
-        <div className="lg:py-28 ">
+    <div className="mt-5 text-center lg:text-left">
+      <div className="lg:flex lg:justify-evenly  ">
+        <div className="lg:py-28  ">
           <p className="text-[20px]">Hello</p>
           <h2 className="text-4xl mt-4 font-bold text-gray-950 ">
             I' am Mahfuz
           </h2>
           <p className="mt-3 mb-4 text-xl">Full Stack Developer</p>
-          <Link className="px-3  py-2 bg-slate-950 text-white font-semibold  rounded-full border">
-            Downloaded Resume
-          </Link>
 
-          <ul className="mt-6 flex gap-5">
+          <a href='https://drive.google.com/file/d/1jSpy0SlCpF-ihNIqwTPoLkhQZ7DZoAKP/view?usp=sharing' className="px-3  py-2 bg-slate-950 text-white font-semibold  rounded-full border">
+            Downloaded Resume
+          </a>
+
+          <ul className="mt-6 flex gap-5 justify-center lg:justify-start">
             <li>
               <a
-                href="https://www.linkedin.com/in/mahfuz-ahmed-40155427b/"
+                href="https://www.linkedin.com/in/mahfuz-ahmed-71a26a350/"
                 target="_blank"
                 className="text-3xl text-[#0077B5]"
               >

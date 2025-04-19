@@ -1,16 +1,13 @@
 import React from 'react';
 import { FaFacebookSquare } from 'react-icons/fa';
-import {
-  FaLinkedin,
-  FaLocationDot,
-  FaPhone,
-  FaSquareWhatsapp,
-} from 'react-icons/fa6';
+import { FaLinkedin, FaLocationDot, FaPhone } from 'react-icons/fa6';
 
 import { MdEmail } from 'react-icons/md';
+import useAOS from '../../hooks/useAOS';
 const Contact = () => {
+  useAOS();
   return (
-    <div id="contact" className="  lg:m-10  ">
+    <div data-aos="fade-up" id="contact" className="  ">
       <h2 className="text-3xl text-center font-semibold">Let's get Contact</h2>
 
       <div className=" lg:flex justify-between gap-5 p-4 bg-base-200 rounded-lg lg:p-10 mt-10">

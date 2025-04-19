@@ -1,9 +1,11 @@
 import React from 'react';
+import useAOS from '../../hooks/useAOS';
 // import about from '../../assets/ben-den-engelsen-YUu9UAcOKZ4-unsplash.jpg';
 
 const AboutMe = () => {
+  useAOS();
   return (
-    <div id="about" className="mt-14 ">
+    <div data-aos="fade-up" id="about" className="mt-14 ">
       <h2 className="text-3xl font-bold text-center ">About Me</h2>
       <div className="lg:flex mt-10 ">
         <div className="lg:w-4/12">
@@ -12,7 +14,6 @@ const AboutMe = () => {
           <h2 className="text-center text-2xl">img</h2>
         </div>
         <div className="lg:w-8/12">
-          <h3 className="text-2xl font-bold  ">About me</h3>
           <p className="leading-7 text-[17px]">
             Hello! I’m Mahfuz, a passionate Full Stack Developer dedicated to
             building modern, efficient, and scalable web applications. With

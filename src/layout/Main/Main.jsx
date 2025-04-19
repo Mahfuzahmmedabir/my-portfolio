@@ -1,15 +1,15 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../../components/Navbar.jsx/Navbar';
-import Footer from '../../components/Footer/Footer';
+import useAOS from '../../hooks/useAOS';
+
 
 const Main = () => {
+  useAOS()
   return (
-    <div>
+    <div data-aos="fade-up">
       <Navbar></Navbar>
       <Outlet></Outlet>
-      <Footer></Footer>
-
     </div>
   );
 };
